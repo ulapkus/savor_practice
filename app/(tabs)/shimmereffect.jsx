@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { View, StyleSheet, Animated } from "react-native";
+import { View, Animated } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
 const ShimmerEffect = ({ width, height }) => {
@@ -21,9 +21,31 @@ const ShimmerEffect = ({ width, height }) => {
   });
 
   return (
-    <View style={[styles.container, { width, height }]}>
-      <View style={[styles.background, { width, height }]} />
-      <Animated.View style={[styles.shimmer, { transform: [{ translateX }] }]}>
+    <View
+      style={{
+        overflow: "hidden",
+        backgroundColor: "#E1E9EE",
+        borderRadius: 4,
+        marginBottom: 10,
+        width,
+        height,
+      }}
+    >
+      <View
+        style={{
+          backgroundColor: "#E1E9EE",
+          width,
+          height,
+        }}
+      />
+      <Animated.View
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          transform: [{ translateX }],
+        }}
+      >
         <LinearGradient
           colors={[
             "rgba(255, 255, 255, 0)",
@@ -38,22 +60,5 @@ const ShimmerEffect = ({ width, height }) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    overflow: "hidden",
-    backgroundColor: "#E1E9EE",
-    borderRadius: 4,
-    marginBottom: 10,
-  },
-  background: {
-    backgroundColor: "#E1E9EE",
-  },
-  shimmer: {
-    width: "100%",
-    height: "100%",
-    position: "absolute",
-  },
-});
 
 export default ShimmerEffect;

@@ -27,13 +27,14 @@ const TabsLayout = () => {
       <Tabs
         screenOptions={{
           tabBarActiveTintColor: "#FFA001",
-          tabBarInactiveTintColor: "#CDCDE0",
+          tabBarInactiveTintColor: "black",
           tabBarShowLabel: false,
           tabBarStyle: {
-            backgroundColor: "#161622",
+            backgroundColor: "white",
             borderTopWidth: 1,
-            borderTopColor: "#232533",
+            borderTopColor: "white",
             height: 84,
+            paddingTop: 20,
           },
         }}
       >
@@ -53,9 +54,9 @@ const TabsLayout = () => {
           }}
         />
         <Tabs.Screen
-          name="skeletonscreen"
+          name="shimmereffect"
           options={{
-            title: "skeletonscreen",
+            title: "shimmereffect",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
@@ -69,9 +70,9 @@ const TabsLayout = () => {
         />
 
         <Tabs.Screen
-          name="skeletonitem"
+          name="skeletonscreen"
           options={{
-            title: "skeletonitem",
+            title: "skeletonscreen",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
