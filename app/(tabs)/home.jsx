@@ -12,18 +12,37 @@ const Home = () => {
         gap: 20,
       }}
     >
-      <View>
-        <Text>SAVOR</Text>
+      <View
+        style={{
+          backgroundColor: "#FC7326",
+          width: "100%",
+          height: "10%",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Image
+          source={{
+            uri: "https://i.ibb.co/0CxhpnP/Screenshot-2024-07-02-at-9-59-08-AM.png",
+          }}
+          style={{ width: 150, height: 40 }}
+        />
       </View>
       <View
         style={{
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
+          backgroundColor: "#F9A578",
+          width: "100%",
+          height: "7%",
         }}
       >
-        <Text>Good Morning, Ula L.</Text>
-        <Text>Salt Lake City 84111</Text>
+        <Text style={{ color: 'white', fontSize: '5'}}>
+          Good Morning, Ula L.
+        </Text>
+        <Text style={{ fontSize: 15 }}>Salt Lake City 84111</Text>
       </View>
       <View
         style={{
