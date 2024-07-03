@@ -44,10 +44,10 @@ const Home = () => {
           paddingRight: 55,
         }}
       >
-        <Text style={{ color: "white", fontSize: "15" }}>
+        <Text style={{ color: "white", fontSize: 15 }}>
           Good Morning, Ula L.
         </Text>
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 5}}>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
           <Image
             source={{
               uri: "https://i.ibb.co/pRRzqJD/Screenshot-2024-07-02-at-11-57-06-AM.png",
@@ -69,7 +69,6 @@ const Home = () => {
             gap: 10,
           }}
         >
-        
           <TextInput
             style={{
               color: "gray",
@@ -85,7 +84,6 @@ const Home = () => {
               paddingLeft: 20,
               backgroundColor: "white",
             }}
-            
             placeholder="Search food"
             placeholderTextColor="gray"
             editable={false}
@@ -127,7 +125,6 @@ const Home = () => {
               justifyContent: "center",
               alignItems: "center",
               gap: 5,
-
             }}
           >
             <Image
@@ -144,7 +141,6 @@ const Home = () => {
               justifyContent: "center",
               alignItems: "center",
               gap: 5,
-
             }}
           >
             <Image
@@ -161,7 +157,6 @@ const Home = () => {
               justifyContent: "center",
               alignItems: "center",
               gap: 5,
-
             }}
           >
             <Image
@@ -181,10 +176,8 @@ const Home = () => {
             width: "100%",
           }}
         >
-          <Text style={{ color: "black", fontSize: "20" }}>Available Now</Text>
-          <Text
-            style={{ fontWeight: "bold", color: "#FC7326", fontSize: "14" }}
-          >
+          <Text style={{ color: "black", fontSize: 20 }}>Available Now</Text>
+          <Text style={{ fontWeight: "bold", color: "#FC7326", fontSize: 14 }}>
             View All
           </Text>
         </View>
@@ -228,12 +221,10 @@ const Home = () => {
             width: "100%",
           }}
         >
-          <Text style={{ color: "black", fontSize: "20" }}>
+          <Text style={{ color: "black", fontSize: 20 }}>
             Favorite Restaraunts
           </Text>
-          <Text
-            style={{ fontWeight: "bold", color: "#FC7326", fontSize: "14" }}
-          >
+          <Text style={{ fontWeight: "bold", color: "#FC7326", fontSize: 14 }}>
             View All
           </Text>
         </View>
@@ -245,10 +236,8 @@ const Home = () => {
             width: "100%",
           }}
         >
-          <Text style={{ color: "black", fontSize: "20" }}>Most Popular</Text>
-          <Text
-            style={{ fontWeight: "bold", color: "#FC7326", fontSize: "14" }}
-          >
+          <Text style={{ color: "black", fontSize: 20 }}>Most Popular</Text>
+          <Text style={{ fontWeight: "bold", color: "#FC7326", fontSize: 14 }}>
             View All
           </Text>
         </View>
@@ -258,4 +247,3 @@ const Home = () => {
 };
 
 export default Home;
-
