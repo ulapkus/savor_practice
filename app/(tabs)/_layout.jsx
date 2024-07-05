@@ -1,6 +1,9 @@
 import { View, Text, Image } from "react-native";
-import { Tabs, Redirect } from "expo-router";
-import { icons } from "../../constants";
+import { Tabs } from "expo-router";
+import bookmark from "../../icons/bookmark.png";
+import home from "../../icons/home.png";
+import plus from "../../icons/plus.png";
+import profile from "../../icons/profile.png";
 
 const TabIcon = ({ icon, color, name, focused }) => {
   return (
@@ -45,7 +48,7 @@ const TabsLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
-                icon={icons.home}
+                icon={home}
                 color={color}
                 name="Home"
                 focused={focused}
@@ -60,7 +63,7 @@ const TabsLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
-                icon={icons.bookmark}
+                icon={bookmark}
                 color={color}
                 name="Orders"
                 focused={focused}
@@ -76,7 +79,7 @@ const TabsLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
-                icon={icons.profile}
+                icon={profile}
                 color={color}
                 name="Profile"
                 focused={focused}
@@ -91,7 +94,7 @@ const TabsLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
-                icon={icons.plus}
+                icon={plus}
                 color={color}
                 name="More"
                 focused={focused}

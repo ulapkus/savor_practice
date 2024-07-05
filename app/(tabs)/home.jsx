@@ -1,4 +1,4 @@
-import { View, Text, Image, ImageBackground, TextInput } from "react-native";
+import { View, Text, Image, TextInput } from "react-native";
 import React from "react";
 
 const Home = () => {

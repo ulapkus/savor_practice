@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { View, Animated } from "react-native";
-//creates and animates views
 import { LinearGradient } from "expo-linear-gradient";
-//creates gradient effects
 
 const ShimmerEffect = ({ width, height }) => {
   const animatedValue = new Animated.Value(0);

@@ -7,7 +7,6 @@ const MainComponent = () => {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    // Simulate data fetching
     setTimeout(() => {
       setData({
         imageUrl: "https://example.com/image.jpg",
@@ -25,7 +24,6 @@ const MainComponent = () => {
   return (
     <View style={{ padding: 20 }}>
       <Image
-        // source={{ uri: data.imageUrl }}
         style={{ width: 200, height: 200, marginBottom: 10 }}
       />
       <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 5 }}>
